@@ -11,3 +11,13 @@ class BillItem(Item):
     agents = Field()
     next_event = Field()
     summary = Field()
+
+class ResearchPaperItem(Item):
+    title = Field()
+    authors = Field()
+    topics = Field()
+    date = Field()
+    note = Field()
+    summary = Field()
+    download = Field()
+
