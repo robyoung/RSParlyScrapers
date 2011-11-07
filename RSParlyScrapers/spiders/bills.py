@@ -63,6 +63,7 @@ class BillsSpider(CrawlSpider):
         if len(selector):
             date = self.date_pattern.search(selector[0].extract())
             if date:
+                # dates represented in mongo extended format, this should be done later in the pipeline.
                 date = {"$date":int(time.mktime(datetime.strptime(date.group(0), "%d.%m.%Y").timetuple()) * 1000)}
             return {
                 "date": date,

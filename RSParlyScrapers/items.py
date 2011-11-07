@@ -9,6 +9,7 @@ class BillItem(Item):
     name = Field()
     url = Field()
     agents = Field()
+    previous_event = Field()
     next_event = Field()
     summary = Field()
 
