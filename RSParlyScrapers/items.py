@@ -5,7 +5,9 @@
 
 from scrapy.item import Item, Field
 
-class RsparlyscrapersItem(Item):
-    # define the fields for your item here like:
-    # name = Field()
-    pass
+class BillItem(Item):
+    name = Field()
+    url = Field()
+    agents = Field()
+    next_event = Field()
+    summary = Field()
