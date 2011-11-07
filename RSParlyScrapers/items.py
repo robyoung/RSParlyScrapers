@@ -21,3 +21,8 @@ class ResearchPaperItem(Item):
     summary = Field()
     download = Field()
 
+class CommitteeItem(Item):
+    name = Field()
+    url = Field()
+    members = Field()
+
